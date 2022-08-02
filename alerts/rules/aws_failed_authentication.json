@@ -1,8 +1,8 @@
 {
   "rule_name": "aws_failed_authentication",
   "rule_author": "siembol",
-  "rule_version": 2,
-  "rule_description": "AWS failed authentication1",
+  "rule_version": 3,
+  "rule_description": "AWS failed authentication12",
   "source_type": "aws_cloudtrail",
   "matchers": [
     {
