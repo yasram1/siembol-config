@@ -9,22 +9,24 @@
     "max_per_hour": 30,
     "max_per_day": 100
   },
-  "rules_version": 4,
+  "rules_version": 5,
   "rules": [
     {
       "rule_name": "aws_failed_authentication",
       "rule_author": "siembol",
-      "rule_version": 1,
-      "rule_description": "AWS failed authentication",
+      "rule_version": 3,
+      "rule_description": "AWS failed authentication12",
       "source_type": "aws_cloudtrail",
       "matchers": [
         {
+          "is_enabled": true,
           "matcher_type": "REGEX_MATCH",
           "is_negated": false,
           "field": "eventName",
           "data": "(?i)ConsoleLogin$"
         },
         {
+          "is_enabled": true,
           "matcher_type": "IS_IN_SET",
           "is_negated": false,
           "field": "errorMessage",
