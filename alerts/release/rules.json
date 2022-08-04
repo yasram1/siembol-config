@@ -9,16 +9,17 @@
     "max_per_hour": 30,
     "max_per_day": 100
   },
-  "rules_version": 5,
+  "rules_version": 6,
   "rules": [
     {
       "rule_name": "win_eventlogs_failed_logon",
       "rule_author": "siembol",
-      "rule_version": 1,
-      "rule_description": "Alert for 4625 failed logon - for correlation on user",
+      "rule_version": 2,
+      "rule_description": "Alert for 4625 failed logon - for correlation on user.",
       "source_type": "win_eventlogs",
       "matchers": [
         {
+          "is_enabled": true,
           "matcher_type": "IS_IN_SET",
           "is_negated": false,
           "field": "EventID",
