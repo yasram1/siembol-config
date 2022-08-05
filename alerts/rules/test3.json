@@ -1,11 +1,12 @@
 {
   "rule_name": "test3",
   "rule_author": "siembol",
-  "rule_version": 1,
+  "rule_version": 2,
   "rule_description": "Detect LSASS handling by Mimikatz.",
   "source_type": "win_eventlogs",
   "matchers": [
     {
+      "is_enabled": true,
       "matcher_type": "IS_IN_SET",
       "is_negated": false,
       "field": "EventID",
@@ -13,12 +14,14 @@
       "data": "4656"
     },
     {
+      "is_enabled": true,
       "matcher_type": "REGEX_MATCH",
       "is_negated": false,
       "field": "ObjectName",
       "data": "^.*\\\\lsass.exe$"
     },
     {
+      "is_enabled": true,
       "matcher_type": "REGEX_MATCH",
       "is_negated": false,
       "field": "ProcessName",
