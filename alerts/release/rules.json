@@ -9,7 +9,7 @@
     "max_per_hour": 30,
     "max_per_day": 100
   },
-  "rules_version": 5,
+  "rules_version": 6,
   "rules": [
     {
       "rule_name": "win_eventlogs_failed_logon",
@@ -40,8 +40,8 @@
     {
       "rule_name": "win_mimikatz",
       "rule_author": "siembol",
-      "rule_version": 1,
-      "rule_description": "Detect LSASS handling by Mimikatz",
+      "rule_version": 2,
+      "rule_description": "Detect LSASS handling by Mimikatz.",
       "source_type": "win_eventlogs",
       "matchers": [
         {
